@@ -2,12 +2,10 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
-// Endpoint 1: texto plano
 app.get('/saludo', (req, res) => {
   res.send('Hola a todo aquel que quiera ver este proyecto');
 });
 
-// Endpoint 2: JSON (presentación)
 app.get('/presentacion', (req, res) => {
   res.json({
     nombre: "Alanis Nicole Forero Salas",
